@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function sayhello(){
+            alert("Hello world")
+        }
+    </script>
+
+</head>
+
+<body>
+
+    1.form tag
+    
+    <form>
+        <input type="text" id="t1">
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    2.Buttons (Normal and Submit)
+
+    <form action="http://www.myhost.com/test.php"> 
+        <!-- this is the website address in which you sending the data  -->
+        <input type="text" id="t1">
+        <br>
+        <input type="submit" value="send">
+    </form>
+    <input type="button" value="Click Here" onclick="sayhello()">
+
+    <hr>
+
+    3.input tag used to take data input depending upon which type of data we want to take as input<br>
+
+    <label>Text</label><input type="text" name="fname" required>
+    <br>
+
+    Number<input type="number"><br>
+    Email<input type="email"><br>
+    Password<input type="password"><br>
+    File<input type="file"><br>
+
+    <hr>
+
+    4.Radio box and check box<br>
+
+    <input type="checkbox" name="c1" value="C"><label>C</label><br>
+    <input type="checkbox" name="c2" value="CPP"><label>CPP</label><br>
+    <input type="radio" name="Gender" value="Male"><label>Male</label><br>
+    <input type="radio" name="Gender" value="Female"><label>Female</label><br>
+
+    <hr>
+
+    5.Select tag<br>
+
+    <select id="lang">
+        <option>C</option>
+        <option>CPP</option>
+        <option>JAVA</option>
+    </select>
+
+    <br>
+    <p></p>
+    <br>
+    
+    <select id="lang" multiple>
+        <option>Marathi</option>
+        <option>Hindi</option>
+        <option>English</option>
+    </select>
+
+    <hr>
+
+
+
+</body>
+
+</html>
